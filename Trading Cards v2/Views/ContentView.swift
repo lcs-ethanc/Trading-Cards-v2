@@ -53,19 +53,30 @@ struct ExtractedView: View {
                 .resizable()
                 .frame(width: 405,height: 905)
                 .padding(10)
-                .background(Color.white)
                 .padding(5)
                 .background(Color.gray)
             VStack(alignment: .leading){
                 Text("\(cardName)")
                         .font(.system(size: 50))
                         .fontWeight(.bold)
-                        .padding(.bottom,500)
+                        .padding(10)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.white)
+                        )
+                        .padding(.bottom,480)
                         .padding(.trailing, 125)
+
                 Text("Stats:")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
+                    .padding(5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Color.white)
+                    )
                     .padding(.bottom,1)
+                
                 HStack{
                     Text("Power: \(power)")
                     Text("Health: \(health)")
@@ -81,6 +92,11 @@ struct ExtractedView: View {
                 Text("Info")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
+                    .padding(5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Color.white)
+                    )
                     .padding(.bottom,1)
                 HStack{
                     Text("Series: \(series)")
