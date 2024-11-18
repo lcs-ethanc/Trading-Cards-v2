@@ -60,7 +60,7 @@ struct ExtractedView: View {
                 Text("\(cardName)")
                         .font(.system(size: 50))
                         .fontWeight(.bold)
-                        .padding(.bottom,20)
+                        .padding(.bottom,500)
                         .padding(.trailing, 125)
                 Text("Stats:")
                     .font(.system(size: 30))
@@ -75,6 +75,21 @@ struct ExtractedView: View {
                     Text("Ki: \(ki)")
                     Text("Endurance: \(endurance)")
                     Text("Battle IQ: \(battleIQ)")
+                    
+                }
+                .padding(.bottom,1)
+                Text("Info")
+                    .font(.system(size: 30))
+                    .fontWeight(.semibold)
+                    .padding(.bottom,1)
+                HStack{
+                    Text("Series: \(series)")
+                    Text("School: \(school)")
+
+                }
+                HStack{
+                    Text("Power Level: 10-260")
+                    Text("Species: \(species)")
                 }
                 }
             }
