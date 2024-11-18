@@ -56,12 +56,29 @@ struct ExtractedView: View {
                 .background(Color.white)
                 .padding(5)
                 .background(Color.gray)
-            Text("\(cardName)")
-                    .font(.system(size: 50))
-                    .fontWeight(.bold)
-                    .padding(.bottom,0.5)
-                    .padding(.trailing, 125)
-        }
+            VStack(alignment: .leading){
+                Text("\(cardName)")
+                        .font(.system(size: 50))
+                        .fontWeight(.bold)
+                        .padding(.bottom,20)
+                        .padding(.trailing, 125)
+                Text("Stats:")
+                    .font(.system(size: 30))
+                    .fontWeight(.semibold)
+                    .padding(.bottom,1)
+                HStack{
+                    Text("Power: \(power)")
+                    Text("Health: \(health)")
+                    Text("Speed: \(speed)")
+                }
+                HStack{
+                    Text("Ki: \(ki)")
+                    Text("Endurance: \(endurance)")
+                    Text("Battle IQ: \(battleIQ)")
+                }
+                }
+            }
+
 
             
         }
