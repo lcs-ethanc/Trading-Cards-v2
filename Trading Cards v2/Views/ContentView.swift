@@ -81,15 +81,16 @@ struct ExtractedView: View {
                     Text("Power: \(power)")
                     Text("Health: \(health)")
                     Text("Speed: \(speed)")
-                }
+                }.foregroundColor(.white)
+                    .fontWeight(.semibold)
                 HStack{
                     Text("Ki: \(ki)")
                     Text("Endurance: \(endurance)")
                     Text("Battle IQ: \(battleIQ)")
-                    
-                }
+                }.foregroundColor(.white)
+                    .fontWeight(.semibold)
                 .padding(.bottom,1)
-                Text("Info")
+                Text("Info:")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
                     .padding(5)
@@ -102,11 +103,14 @@ struct ExtractedView: View {
                     Text("Series: \(series)")
                     Text("School: \(school)")
 
-                }
+                }.foregroundColor(.white)
+                    .fontWeight(.semibold)
+                
                 HStack{
                     Text("Power Level: 10-260")
                     Text("Species: \(species)")
-                }
+                }.foregroundColor(.white)
+                    .fontWeight(.semibold)
                 }
             }
 
