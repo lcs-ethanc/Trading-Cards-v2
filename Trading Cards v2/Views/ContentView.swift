@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack(alignment: .leading){
             ExtractedView(
                 cardName: "Kid Goku",
-                image: "kidGoku2",
+                image: "kidGoku3",
                 power: 10,
                 health: 9,
                 speed: 12,
@@ -48,11 +48,21 @@ struct ExtractedView: View {
     let abilityOne: String
     let abilityTwo: String
     var body: some View {
-        Text("\(cardName)")
-                .font(.system(size: 50))
-                .fontWeight(.bold)
-                .padding(.bottom,0.5)
-                .padding(.trailing, 125)
+        ZStack{
+            Image("\(image)")
+                .resizable()
+                .frame(width: 405,height: 905)
+                .padding(10)
+                .background(Color.white)
+                .padding(5)
+                .background(Color.gray)
+            Text("\(cardName)")
+                    .font(.system(size: 50))
+                    .fontWeight(.bold)
+                    .padding(.bottom,0.5)
+                    .padding(.trailing, 125)
+        }
+
             
         }
     }
