@@ -78,18 +78,24 @@ struct ExtractedView: View {
                     .padding(.bottom,1)
                 
                 HStack{
-                    Text("Power: \(power)")
-                    Text("Health: \(health)")
-                    Text("Speed: \(speed)")
+                    VStack(alignment: .leading){
+                        Text("Power: \(power)")
+                        Text("Ki: \(ki)")
+                    }
+                    VStack(alignment: .leading){
+                        Text("Health: \(health)")
+                        Text("Endurance: \(endurance)")
+                    }
+                    VStack(alignment: .leading){
+                        Text("Speed: \(speed)")
+                        Text("Battle IQ: \(battleIQ)")
+                    }
+  
+
+
                 }.foregroundColor(.white)
                     .fontWeight(.semibold)
-                HStack{
-                    Text("Ki: \(ki)")
-                    Text("Endurance: \(endurance)")
-                    Text("Battle IQ: \(battleIQ)")
-                }.foregroundColor(.white)
-                    .fontWeight(.semibold)
-                .padding(.bottom,1)
+                
                 Text("Info:")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
@@ -100,17 +106,20 @@ struct ExtractedView: View {
                     )
                     .padding(.bottom,1)
                 HStack{
-                    Text("Series: \(series)")
-                    Text("School: \(school)")
+                    VStack(alignment: .leading){
+                        Text("Series: \(series)")
+                        Text("Power Level: 10-260")
+                    }
+                    VStack(alignment: .leading){
+                        Text("School: \(school)")
+                        Text("Species: \(species)")
+                    }
+
+
 
                 }.foregroundColor(.white)
                     .fontWeight(.semibold)
                 
-                HStack{
-                    Text("Power Level: 10-260")
-                    Text("Species: \(species)")
-                }.foregroundColor(.white)
-                    .fontWeight(.semibold)
                 }
             }
 
