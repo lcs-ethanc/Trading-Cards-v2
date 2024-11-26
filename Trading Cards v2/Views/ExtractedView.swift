@@ -65,11 +65,12 @@ struct CardView: View {
                         Text("Health: \(health)")
                         Text("Endurance: \(endurance)")
                     }
+                    .padding(.leading,5)
                     VStack(alignment: .leading){
                         Text("Speed: \(speed)")
                         Text("Battle IQ: \(battleIQ)")
                     }
-
+                    .padding(.leading,5)
 
                 }.foregroundColor(.white)
                     .fontWeight(.semibold)
@@ -105,3 +106,6 @@ struct CardView: View {
             
         }
     }
+#Preview {
+    ContentView()
+}
