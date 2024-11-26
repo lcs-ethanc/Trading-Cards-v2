@@ -90,7 +90,6 @@ struct ExtractedView: View {
                         Text("Speed: \(speed)")
                         Text("Battle IQ: \(battleIQ)")
                     }
-  
 
 
                 }.foregroundColor(.white)

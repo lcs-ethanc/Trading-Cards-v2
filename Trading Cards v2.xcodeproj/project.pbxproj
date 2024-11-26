@@ -7,25 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4454986E2CF660640093567A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454986C2CF660640093567A /* ContentView.swift */; };
+		445498702CF660810093567A /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454986F2CF660810093567A /* Ribbon.swift */; };
 		44ADD5512CEBC32E00240632 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ADD54B2CEBC32E00240632 /* Preview Assets.xcassets */; };
 		44ADD5522CEBC32E00240632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ADD54D2CEBC32E00240632 /* Assets.xcassets */; };
 		44ADD5542CEBC32E00240632 /* Trading_Cards_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADD54F2CEBC32E00240632 /* Trading_Cards_v2App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4454986C2CF660640093567A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4454986F2CF660810093567A /* Ribbon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribbon.swift; sourceTree = "<group>"; };
 		44ADD53A2CEBC31900240632 /* Trading Cards v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trading Cards v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ADD54B2CEBC32E00240632 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44ADD54D2CEBC32E00240632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44ADD54F2CEBC32E00240632 /* Trading_Cards_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trading_Cards_v2App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		44ADD5572CEBC34600240632 /* Views */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Views;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		44ADD5372CEBC31900240632 /* Frameworks */ = {
@@ -38,6 +34,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4454986B2CF6605A0093567A /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				4454986F2CF660810093567A /* Ribbon.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		4454986D2CF660640093567A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4454986C2CF660640093567A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		44ADD5312CEBC31900240632 = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				44ADD54F2CEBC32E00240632 /* Trading_Cards_v2App.swift */,
-				44ADD5572CEBC34600240632 /* Views */,
+				4454986B2CF6605A0093567A /* Shapes */,
+				4454986D2CF660640093567A /* Views */,
 				44ADD54C2CEBC32E00240632 /* Preview Content */,
 				44ADD54D2CEBC32E00240632 /* Assets.xcassets */,
 			);
@@ -87,9 +100,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				44ADD5572CEBC34600240632 /* Views */,
 			);
 			name = "Trading Cards v2";
 			packageProductDependencies = (
@@ -149,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445498702CF660810093567A /* Ribbon.swift in Sources */,
+				4454986E2CF660640093567A /* ContentView.swift in Sources */,
 				44ADD5542CEBC32E00240632 /* Trading_Cards_v2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
