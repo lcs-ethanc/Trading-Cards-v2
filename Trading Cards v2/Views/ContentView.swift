@@ -55,7 +55,7 @@ struct ExtractedView: View {
                 .padding(10)
                 .padding(5)
                 .background(Color.gray)
-                .overlay(alignment: .top) {
+                .overlay(alignment: .top) { //overlay
                     Ribbon()
                         .fill(Color.white)
                         .frame(width: 350, height: 100)
