@@ -55,17 +55,20 @@ struct ExtractedView: View {
                 .padding(10)
                 .padding(5)
                 .background(Color.gray)
+                .overlay(alignment: .top) {
+                    Ribbon()
+                        .fill(Color.white)
+                        .frame(width: 350, height: 100)
+                        .padding(.top,74)
+                      
+                }
             VStack(alignment: .leading){
                 Text("\(cardName)")
                         .font(.system(size: 50))
                         .fontWeight(.bold)
                         .padding(10)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.white)
-                        )
                         .padding(.bottom,480)
-                        .padding(.trailing, 125)
+                        .padding(.leading,55)
 
                 Text("Stats:")
                     .font(.system(size: 30))
