@@ -25,5 +25,40 @@ struct Card: Identifiable {
     let abilityTwo: String
     let themeColor: String
 }
-let kidGoku = Card(cardName: "Kid Goku", image: "kidGoku3", power: 10, health: 9, speed: 12, ki: 20, endurance: 7, battleIQ: 15, series: "Dragon Ball", school: "Turtle School", species: "Saiyan", powerLevel: "10-260", abilityOne: "Kamehameha: A powerful energy wave", abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.", themeColor: "white")
-let cards = [kidGoku]
+let kidGoku = Card(
+    cardName: "Kid Goku",
+    image: "kidGoku3",
+    power: 10,
+    health: 9,
+    speed: 12,
+    ki: 20,
+    endurance: 7,
+    battleIQ: 15,
+    series: "Dragon Ball",
+    school: "Turtle School",
+    species: "Saiyan",
+    powerLevel: "10-260",
+    abilityOne: "Kamehameha: A powerful energy wave",
+    abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.",
+    themeColor: "white"
+)
+let greatApeGoku = Card(
+    cardName: "Great Ape (Goku)",
+    image: "greatApe",
+    power: 100,
+    health: 90,
+    speed: 70,
+    ki: 40,
+    endurance: 80,
+    battleIQ: 5,
+    series: "Dragon Ball",
+    school: "None",
+    species: "Saiyan",
+    powerLevel: "10,000+",
+    abilityOne: "Gigantic Roar: An earth-shaking roar that can stun enemies.",
+    abilityTwo: "Great Ape Smash: A devastating physical attack that crushes opponents.",
+    themeColor: "brown"
+)
+
+
+let cards = [kidGoku, greatApeGoku]
