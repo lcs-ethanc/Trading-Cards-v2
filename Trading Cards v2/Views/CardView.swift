@@ -36,7 +36,8 @@ struct CardView: View {
             VStack(alignment: .leading){
                 HStack{
                     Spacer()
-                    Text(providedCard.cardForm)
+                    Text(providedCard.cardName)
+                        .padding(.top,85)
                             .font(.system(size: 40))
                             .fontWeight(.bold)
                         
@@ -45,64 +46,69 @@ struct CardView: View {
                 }
                 HStack{
                     Spacer()
-                    Text(providedCard.cardName)
-                        .padding(.bottom,480)
+                    Text(providedCard.cardForm)
                     Spacer()
                 }
+                Spacer()
+
+                VStack(alignment: .leading){
+                    Text("Stats:")
+                        .font(.system(size: 30))
+                        .fontWeight(.semibold)
+                        .padding(5)
+                        .background(
+                            RoundedRectangle(cornerRadius: 5)
+                                .fill(Color.white)
+                        )
+                        .padding(.bottom,1)
+                    
+                    HStack{
+                        VStack(alignment: .leading){
+                            Text("Power: \(providedCard.power)")
+                            Text("Ki: \(providedCard.ki)")
+                        }
+                        VStack(alignment: .leading){
+                            Text("Health: \(providedCard.health)")
+                            Text("Endurance: \(providedCard.endurance)")
+                        }
+                        .padding(.leading,5)
+                        VStack(alignment: .leading){
+                            Text("Speed: \(providedCard.speed)")
+                            Text("Battle IQ: \(providedCard.battleIQ)")
+                        }
+                        .padding(.leading,5)
+
+                    }.foregroundColor(Color.white)
+                        .fontWeight(.semibold)
+                    
+                    
+                    Text("Info:")
+                        .font(.system(size: 30))
+                        .fontWeight(.semibold)
+                        .padding(5)
+                        .background(
+                            RoundedRectangle(cornerRadius: 5)
+                                .fill(Color.white)
+                        )
+                        .padding(.bottom,1)
+                    HStack{
+                        VStack(alignment: .leading){
+                            Text("Series: \(providedCard.series)")
+                            Text("Power Level: 10-260")
+                        }
+                        VStack(alignment: .leading){
+                            Text("School: \(providedCard.school)")
+                            Text("Species: \(providedCard.species)")
+                        }
 
 
-                Text("Stats:")
-                    .font(.system(size: 30))
-                    .fontWeight(.semibold)
-                    .padding(5)
-                    .background(
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(Color.white)
-                    )
-                    .padding(.bottom,1)
+
+                    }.foregroundColor(.white)
+                        .fontWeight(.semibold)
+                }
+                .padding(.leading,50)
+                .padding(.bottom,80)
                 
-                HStack{
-                    VStack(alignment: .leading){
-                        Text("Power: \(providedCard.power)")
-                        Text("Ki: \(providedCard.ki)")
-                    }
-                    VStack(alignment: .leading){
-                        Text("Health: \(providedCard.health)")
-                        Text("Endurance: \(providedCard.endurance)")
-                    }
-                    .padding(.leading,5)
-                    VStack(alignment: .leading){
-                        Text("Speed: \(providedCard.speed)")
-                        Text("Battle IQ: \(providedCard.battleIQ)")
-                    }
-                    .padding(.leading,5)
-
-                }.foregroundColor(Color.white)
-                    .fontWeight(.semibold)
-                
-                Text("Info:")
-                    .font(.system(size: 30))
-                    .fontWeight(.semibold)
-                    .padding(5)
-                    .background(
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(Color.white)
-                    )
-                    .padding(.bottom,1)
-                HStack{
-                    VStack(alignment: .leading){
-                        Text("Series: \(providedCard.series)")
-                        Text("Power Level: 10-260")
-                    }
-                    VStack(alignment: .leading){
-                        Text("School: \(providedCard.school)")
-                        Text("Species: \(providedCard.species)")
-                    }
-
-
-
-                }.foregroundColor(.white)
-                    .fontWeight(.semibold)
                 
                 }
             }

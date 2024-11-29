@@ -27,8 +27,8 @@ struct Card: Identifiable {
     let themeColor: String
 }
 let kidGoku = Card(
-    cardName: "Goku",
-    cardForm: "Kid",
+    cardName: "Kid Goku",
+    cardForm: "Base",
     image: "kidGoku3",
     power: 10,
     health: 9,
