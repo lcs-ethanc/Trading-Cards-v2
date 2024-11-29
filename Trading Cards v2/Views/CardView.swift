@@ -34,12 +34,16 @@ struct CardView: View {
                       
                 }
             VStack(alignment: .leading){
-                Text(providedCard.cardName)
-                        .font(.system(size: 50))
-                        .fontWeight(.bold)
-                        .padding(10)
-                        .padding(.bottom,480)
-                        .padding(.leading,55)
+                HStack{
+                    Spacer()
+                    Text(providedCard.cardName)
+                            .font(.system(size: 40))
+                            .fontWeight(.bold)
+                            .padding(10)
+                            .padding(.bottom,480)
+                    Spacer()
+
+                }
 
                 Text("Stats:")
                     .font(.system(size: 30))
@@ -102,5 +106,5 @@ struct CardView: View {
         }
     }
 #Preview {
-    CardView(providedCard: kidGoku)
+    CardView(providedCard: greatApeGoku)
 }

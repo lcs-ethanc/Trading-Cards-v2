@@ -10,6 +10,7 @@ import SwiftUI
 struct Card: Identifiable {
     let id = UUID()
     let cardName: String
+    let cardForm: String
     let image: String
     let power: Int
     let health: Int
@@ -26,7 +27,8 @@ struct Card: Identifiable {
     let themeColor: String
 }
 let kidGoku = Card(
-    cardName: "Kid Goku",
+    cardName: "Goku",
+    cardForm: "Kid",
     image: "kidGoku3",
     power: 10,
     health: 9,
@@ -43,7 +45,8 @@ let kidGoku = Card(
     themeColor: "white"
 )
 let greatApeGoku = Card(
-    cardName: "Great Ape (Goku)",
+    cardName: "Goku",
+    cardForm: "Great Ape",
     image: "greatApe",
     power: 100,
     health: 90,

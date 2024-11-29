@@ -15,9 +15,11 @@ struct CardTabView: View {
                 
             }
         }
+        .ignoresSafeArea()
+        .persistentSystemOverlays(.hidden)
     }
  }
 
 #Preview {
-    CardView(providedCard: kidGoku)
+    CardTabView()
 }
