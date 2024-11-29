@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4454986E2CF660640093567A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454986C2CF660640093567A /* ContentView.swift */; };
 		445498702CF660810093567A /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454986F2CF660810093567A /* Ribbon.swift */; };
-		44968D952CF664BA00C05DC3 /* ExtractedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968D942CF664BA00C05DC3 /* ExtractedView.swift */; };
 		44968D972CF96A2200C05DC3 /* CardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968D962CF96A2200C05DC3 /* CardTabView.swift */; };
+		44968D9A2CF96D1A00C05DC3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968D992CF96D1A00C05DC3 /* Card.swift */; };
+		44968D9C2CF96FB400C05DC3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968D9B2CF96FB100C05DC3 /* CardView.swift */; };
 		44ADD5512CEBC32E00240632 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ADD54B2CEBC32E00240632 /* Preview Assets.xcassets */; };
 		44ADD5522CEBC32E00240632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ADD54D2CEBC32E00240632 /* Assets.xcassets */; };
 		44ADD5542CEBC32E00240632 /* Trading_Cards_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADD54F2CEBC32E00240632 /* Trading_Cards_v2App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4454986C2CF660640093567A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4454986F2CF660810093567A /* Ribbon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribbon.swift; sourceTree = "<group>"; };
-		44968D942CF664BA00C05DC3 /* ExtractedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedView.swift; sourceTree = "<group>"; };
 		44968D962CF96A2200C05DC3 /* CardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabView.swift; sourceTree = "<group>"; };
+		44968D992CF96D1A00C05DC3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		44968D9B2CF96FB100C05DC3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		44ADD53A2CEBC31900240632 /* Trading Cards v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trading Cards v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ADD54B2CEBC32E00240632 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44ADD54D2CEBC32E00240632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,11 +49,18 @@
 		4454986D2CF660640093567A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4454986C2CF660640093567A /* ContentView.swift */,
-				44968D942CF664BA00C05DC3 /* ExtractedView.swift */,
+				44968D9B2CF96FB100C05DC3 /* CardView.swift */,
 				44968D962CF96A2200C05DC3 /* CardTabView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		44968D982CF96C0600C05DC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44968D992CF96D1A00C05DC3 /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		44ADD5312CEBC31900240632 = {
@@ -84,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				44ADD54F2CEBC32E00240632 /* Trading_Cards_v2App.swift */,
+				44968D982CF96C0600C05DC3 /* Models */,
 				4454986B2CF6605A0093567A /* Shapes */,
 				4454986D2CF660640093567A /* Views */,
 				44ADD54C2CEBC32E00240632 /* Preview Content */,
@@ -166,9 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				445498702CF660810093567A /* Ribbon.swift in Sources */,
-				44968D952CF664BA00C05DC3 /* ExtractedView.swift in Sources */,
-				4454986E2CF660640093567A /* ContentView.swift in Sources */,
+				44968D9A2CF96D1A00C05DC3 /* Card.swift in Sources */,
 				44ADD5542CEBC32E00240632 /* Trading_Cards_v2App.swift in Sources */,
+				44968D9C2CF96FB400C05DC3 /* CardView.swift in Sources */,
 				44968D972CF96A2200C05DC3 /* CardTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,11 @@
 //
+//  CardView.swift
+//  Trading Cards v2
+//
+//  Created by Pak Ching Ethan Chen on 2024-11-28.
+//
+
+//
 //  ExtractedView.swift
 //  Trading Cards v2
 //
@@ -9,24 +16,11 @@
 import SwiftUI
 
 struct CardView: View {
-    let cardName: String
-    let image: String
-    let power: Int
-    let health: Int
-    let speed: Int
-    let ki: Int
-    let endurance: Int
-    let battleIQ: Int
-    let series: String
-    let school: String
-    let species: String
-    let powerLevel: String
-    let abilityOne: String
-    let abilityTwo: String
-    let themeColor: String
+    let providedCard: Card
+ 
     var body: some View {
         ZStack{
-            Image("\(image)")
+            Image(providedCard.image)
                 .resizable()
                 .frame(width: 405,height: 905)
                 .padding(10)
@@ -40,7 +34,7 @@ struct CardView: View {
                       
                 }
             VStack(alignment: .leading){
-                Text("\(cardName)")
+                Text(providedCard.cardName)
                         .font(.system(size: 50))
                         .fontWeight(.bold)
                         .padding(10)
@@ -59,17 +53,17 @@ struct CardView: View {
                 
                 HStack{
                     VStack(alignment: .leading){
-                        Text("Power: \(power)")
-                        Text("Ki: \(ki)")
+                        Text("Power: \(providedCard.power)")
+                        Text("Ki: \(providedCard.ki)")
                     }
                     VStack(alignment: .leading){
-                        Text("Health: \(health)")
-                        Text("Endurance: \(endurance)")
+                        Text("Health: \(providedCard.health)")
+                        Text("Endurance: \(providedCard.endurance)")
                     }
                     .padding(.leading,5)
                     VStack(alignment: .leading){
-                        Text("Speed: \(speed)")
-                        Text("Battle IQ: \(battleIQ)")
+                        Text("Speed: \(providedCard.speed)")
+                        Text("Battle IQ: \(providedCard.battleIQ)")
                     }
                     .padding(.leading,5)
 
@@ -87,12 +81,12 @@ struct CardView: View {
                     .padding(.bottom,1)
                 HStack{
                     VStack(alignment: .leading){
-                        Text("Series: \(series)")
+                        Text("Series: \(providedCard.series)")
                         Text("Power Level: 10-260")
                     }
                     VStack(alignment: .leading){
-                        Text("School: \(school)")
-                        Text("Species: \(species)")
+                        Text("School: \(providedCard.school)")
+                        Text("Species: \(providedCard.species)")
                     }
 
 
@@ -108,6 +102,5 @@ struct CardView: View {
         }
     }
 #Preview {
-    ContentView()
+    CardView(providedCard: kidGoku)
 }
-let kidGoku = CardView(cardName: "Kid Goku", image: "kidGoku3", power: 10, health: 9, speed: 12, ki: 20, endurance: 7, battleIQ: 15, series: "Dragon Ball", school: "Turtle School", species: "Saiyan", powerLevel: "10-260", abilityOne: "Kamehameha: A powerful energy wave", abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.", themeColor: "white")
