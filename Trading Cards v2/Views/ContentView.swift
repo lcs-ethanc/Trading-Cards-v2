@@ -25,7 +25,8 @@ struct ContentView: View {
                 species: "Saiyan",
                 powerLevel: "10-260",
                 abilityOne: "Kamehameha: A powerful energy wave",
-                abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths."
+                abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.",
+                themeColor: "white"
             )
     }
 }

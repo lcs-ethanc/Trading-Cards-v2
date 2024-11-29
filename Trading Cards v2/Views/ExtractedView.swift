@@ -23,6 +23,7 @@ struct CardView: View {
     let powerLevel: String
     let abilityOne: String
     let abilityTwo: String
+    let themeColor: String
     var body: some View {
         ZStack{
             Image("\(image)")
@@ -72,7 +73,7 @@ struct CardView: View {
                     }
                     .padding(.leading,5)
 
-                }.foregroundColor(.white)
+                }.foregroundColor(Color.white)
                     .fontWeight(.semibold)
                 
                 Text("Info:")
@@ -109,3 +110,4 @@ struct CardView: View {
 #Preview {
     ContentView()
 }
+let kidGoku = CardView(cardName: "Kid Goku", image: "kidGoku3", power: 10, health: 9, speed: 12, ki: 20, endurance: 7, battleIQ: 15, series: "Dragon Ball", school: "Turtle School", species: "Saiyan", powerLevel: "10-260", abilityOne: "Kamehameha: A powerful energy wave", abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.", themeColor: "white")
