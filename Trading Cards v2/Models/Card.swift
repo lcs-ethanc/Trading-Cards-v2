@@ -24,7 +24,7 @@ struct Card: Identifiable {
     let powerLevel: String
     let abilityOne: String
     let abilityTwo: String
-    let themeColor: String
+    let themeColor: Color
 }
 let kidGoku = Card(
     cardName: "Kid Goku",
@@ -42,7 +42,7 @@ let kidGoku = Card(
     powerLevel: "10-260",
     abilityOne: "Kamehameha: A powerful energy wave",
     abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.",
-    themeColor: "white"
+    themeColor: .white
 )
 let greatApeGoku = Card(
     cardName: "Goku",
@@ -60,7 +60,7 @@ let greatApeGoku = Card(
     powerLevel: "10,000+",
     abilityOne: "Gigantic Roar: An earth-shaking roar that can stun enemies.",
     abilityTwo: "Great Ape Smash: A devastating physical attack that crushes opponents.",
-    themeColor: "brown"
+    themeColor: .brown
 )
 
 

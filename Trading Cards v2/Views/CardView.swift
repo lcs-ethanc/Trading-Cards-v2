@@ -29,7 +29,7 @@ struct CardView: View {
                 .overlay() { //overlay
                     VStack{
                         Ribbon()
-                            .fill(Color.white)
+                            .fill(providedCard.themeColor)
                             .frame(width: 350, height: 100)
                             .padding(.top,75)
                         Spacer()
@@ -61,7 +61,7 @@ struct CardView: View {
                         .padding(5)
                         .background(
                             RoundedRectangle(cornerRadius: 5)
-                                .fill(Color.white)
+                                .fill(providedCard.themeColor)
                         )
                         .padding(.bottom,1)
                     
@@ -91,7 +91,7 @@ struct CardView: View {
                         .padding(5)
                         .background(
                             RoundedRectangle(cornerRadius: 5)
-                                .fill(Color.white)
+                                .fill(providedCard.themeColor)
                         )
                         .padding(.bottom,1)
                     HStack{
