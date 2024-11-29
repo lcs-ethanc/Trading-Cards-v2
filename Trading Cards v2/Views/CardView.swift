@@ -121,5 +121,5 @@ struct CardView: View {
         }
     }
 #Preview {
-    CardView(providedCard: greatApeGoku)
+    CardView(providedCard: kidGoku)
 }

@@ -10,13 +10,14 @@ import SwiftUI
 struct CardTabView: View {
     var body: some View {
         TabView {
-            ForEach (cards){ currentCard in
+            ForEach(cards) { currentCard in
                 CardView(providedCard: currentCard)
                 
             }
         }
         .ignoresSafeArea()
         .persistentSystemOverlays(.hidden)
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
  }
 
