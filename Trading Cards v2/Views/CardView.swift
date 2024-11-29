@@ -36,14 +36,20 @@ struct CardView: View {
             VStack(alignment: .leading){
                 HStack{
                     Spacer()
-                    Text(providedCard.cardName)
+                    Text(providedCard.cardForm)
                             .font(.system(size: 40))
                             .fontWeight(.bold)
-                            .padding(10)
-                            .padding(.bottom,480)
+                        
                     Spacer()
 
                 }
+                HStack{
+                    Spacer()
+                    Text(providedCard.cardName)
+                        .padding(.bottom,480)
+                    Spacer()
+                }
+
 
                 Text("Stats:")
                     .font(.system(size: 30))
