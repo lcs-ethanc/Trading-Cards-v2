@@ -26,12 +26,15 @@ struct CardView: View {
                 .padding(10)
                 .padding(5)
                 .background(Color.gray)
-                .overlay(alignment: .top) { //overlay
-                    Ribbon()
-                        .fill(Color.white)
-                        .frame(width: 350, height: 100)
-                        .padding(.top,74)
-                      
+                .overlay() { //overlay
+                    VStack{
+                        Ribbon()
+                            .fill(Color.white)
+                            .frame(width: 350, height: 100)
+                            .padding(.top,75)
+                        Spacer()
+                    }
+                    
                 }
             VStack(alignment: .leading){
                 HStack{
