@@ -26,3 +26,4 @@ struct Card: Identifiable {
     let themeColor: String
 }
 let kidGoku = Card(cardName: "Kid Goku", image: "kidGoku3", power: 10, health: 9, speed: 12, ki: 20, endurance: 7, battleIQ: 15, series: "Dragon Ball", school: "Turtle School", species: "Saiyan", powerLevel: "10-260", abilityOne: "Kamehameha: A powerful energy wave", abilityTwo: "Power Pole: A magical staff that can extend to incredible lengths.", themeColor: "white")
+let cards = [kidGoku]
